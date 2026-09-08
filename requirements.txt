@@ -1,0 +1,21 @@
+# su3-vertex-encoding - Python 3.11 dependencies
+# Install:              pip install -r requirements.txt
+# Pin exact versions:   pip freeze > requirements-lock.txt
+# NOTE: keep this file ASCII-only; pip on Chinese Windows reads it as GBK.
+
+# Core numerics / symbolic algebra
+numpy>=2.0,<3
+scipy>=1.14,<2
+sympy>=1.13,<2
+
+# Plotting
+matplotlib>=3.9,<4
+
+# Tensor networks / MPS (phase0-mps)
+quimb>=1.10,<2
+
+# Reading reference PDFs under papers/
+pypdf>=6.0,<7
+
+# Tests (tests/)
+pytest>=8.0

@@ -28,5 +28,5 @@
   ```
 - 运行依赖安装：
   ```powershell
-  pip install numpy scipy matplotlib sympy quimb
+  pip install -r requirements.txt
   ```
