@@ -1,0 +1,21 @@
+# Python virtual environment (30MB, recreate with: python -m venv su3_env)
+su3_env/
+.venv/
+venv/
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Reference PDFs are copyrighted / large binaries; see papers/00-reading-list.md for arXiv IDs
+/*.pdf
+papers/*.pdf
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
