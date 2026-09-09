@@ -179,6 +179,9 @@
 | 3 | LSH SU(2) → 预势 SU(3) → Kadam 2025 I、II | 写论文相关工作一节草稿 |
 | 4 | Childs 讲义；Trotter 误差论文；Martinez；Klco 2018 | Qiskit 跑通 Schwinger 模型，与精确对角化对比 |
 
-## 一个需要修的地方
+## 一个需要修的地方（2026-09-09 已修）
 
-项目 README 把 arXiv:2608.28752 当作"暴力截断 SU(3) 多重态"的现有工作来引用。核对后该文是 Ciavarella, de Putter, Younis, Rrapaj (2026-08-28) 的 *Quantum Simulations of Two-Dimensional Non-Abelian Adjoint String Breaking*，做的是三角格子上的纯 SU(2) 理论，用局域 Krylov 截断。SU(2) 没有外多重性，所以它不能作为 SU(3) 多重性被截掉的例证。对应 SU(3) 的基线应改引 Kadam 等 2025 和 Ciavarella–Klco–Savage 2021。
+~~项目 README 把 arXiv:2608.28752 当作"暴力截断 SU(3) 多重态"的现有工作来引用。核对后该文是 Ciavarella, de Putter, Younis, Rrapaj (2026-08-28) 的 *Quantum Simulations of Two-Dimensional Non-Abelian Adjoint String Breaking*，做的是三角格子上的纯 SU(2) 理论，用局域 Krylov 截断。SU(2) 没有外多重性，所以它不能作为 SU(3) 多重性被截掉的例证。对应 SU(3) 的基线应改引 Kadam 等 2025 和 Ciavarella–Klco–Savage 2021。~~
+
+**已修**：README 第 1 节的该条已重写为「现有工作停在哪里 / 本项目的缺口定位」两条，按两篇论文的摘要原文陈述边界——Ciavarella–Klco–Savage 2021 演示止于 1–2 个方格；Kadam 等 2025 只做到三价顶点，且自陈正交化的普适闭式解仍未找到、未给出量子比特编码。本项目的四价顶点缺口由此定位。
+
