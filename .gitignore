@@ -10,9 +10,7 @@ __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
 
-# Reference PDFs are copyrighted / large binaries; see papers/00-reading-list.md for arXiv IDs
-/*.pdf
-papers/*.pdf
+
 
 # OS / editor
 .DS_Store
