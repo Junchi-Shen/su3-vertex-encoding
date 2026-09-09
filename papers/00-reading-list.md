@@ -110,6 +110,66 @@
 
 ---
 
+## 课程与视频资源（2026-09-09 补充）
+
+上面的分层清单是"读什么"，这一节是"看什么"。核对结论：四个短板里只有算法/误差和二次量子化有成体系的公开课程，哈密顿量格点规范理论与顶点多重性**不存在任何 MOOC**——这个方向公开只有七八年，还没人做教学化。
+
+**使用原则**：视频课是时间黑洞。除 QGSS 2022 外，其余一律按"卡住时定点查询"使用，不要从头刷。
+
+### 对应第 2 层（SU(3) 表示论）
+
+- ○ NPTEL《Group Theory Methods in Physics》，P. Ramadevi（IIT Bombay）。免费，约 60 讲，带作业。
+  https://onlinecourses.nptel.ac.in/noc20_ph03/preview
+  单讲索引（可直接跳某一讲）：http://www.infocobuild.com/education/audio-video-courses/physics/GroupTheoryMethods-IIT-Bombay/lecture-44.html
+  只看第 38–50 讲附近：李代数、李代数的子代数（Lec 40）、SU(2) 与 SU(3) 群（Lec 44）、杨图与张量方法。前半的分立群、特征标表、分子振动与本项目无关。Georgi 那三章其实写得比这门课清楚，视频的用途是"权图怎么画""8⊗8 怎么用杨图数出来"这类具体卡点。
+- Gelfand–Tsetlin 模式：**无任何课程覆盖**。全世界的教学材料就是 Alex 等 2011 论文的第 2 节加附录代码。只能硬啃。
+
+### 对应第 1、3 层（哈密顿量格点规范理论、顶点多重性）
+
+**不存在 MOOC、OCW 或 Coursera 课程。** 替代方案：
+
+- ★ 把 Davoudi 讲义（arXiv:2507.15840，本目录已有 PDF）当作课程主线，**7 道习题全部做完**。这是这个领域目前唯一系统的教学材料，做题的收益超过任何视频。
+- ○ 录像：Davoudi 在 TASI 2024 讲过 "Quantum Computing for Quantum Field Theories"，去 hub 页面找录像。
+  https://sites.google.com/colorado.edu/tasi-2024-hub/lectures
+- 提醒：欧氏路径积分那一侧的格点 QCD 有大量暑期学校（Lattice Practices 等），但那是另一套形式体系，对哈密顿量方案帮助有限，不要绕进去。
+
+### 对应第 4、5 层（量子算法、Trotter 误差、上手实现）
+
+- ★ Qiskit Global Summer School 2022: Quantum Simulations。19 讲 + 4 个 lab notebook，全免费。
+  https://www.youtube.com/playlist?list=PLOFEBzvs-Vvo5o97bYt8o1l8Ra1poMASQ
+  **本清单里唯一建议从头看完的视频课。** 主题就是量子模拟，Trotterization 讲得实操，直接对应四周计划第 4 周的"Qiskit 跑通 Schwinger 模型"。
+- ○ MIT 8.370x / 8.371x（Chuang、Harrow、Shor），已迁到 MIT Open Learning Library，免费自学。
+  https://openlearninglibrary.mit.edu/courses/course-v1:MITx+8.371.1x+2T2018/about
+  OCW 版：https://ocw.mit.edu/courses/8-371x-quantum-information-science-ii-spring-2018/
+  只需 **8.371.3x** 模块（Hamiltonian simulation、hidden subgroup、linear systems）。8.370x 的 Grover/Shor 可跳。写论文误差分析一节之前补即可。
+- Trotter 误差界本身仍以 Childs 讲义与 Childs 等 2021（第 4 层）为正统来源，课只用来建直觉。
+- 资源估计：**无课程**。来源是 Childs 等 2021 加各家硬件商白皮书。
+
+### 二次量子化与规范场
+
+- ★ David Tong, *Quantum Field Theory*（剑桥）。讲义 + 2009 年 Perimeter 录像。
+  讲义：https://www.damtp.cam.ac.uk/user/tong/qft.html
+  录像：http://www.damtp.cam.ac.uk/user/tong/qftvids.html
+  **只看前四五讲**（自由场的正则量子化、产生湮灭算符、场的模式展开）加规范不变性与 QED 那部分。圈图、重整化、跑动耦合全部跳过——本项目做的是有限维截断的哈密顿量，重整化那套用不上。
+- ★ Tong, *Gauge Theory* 讲义（无录像）的非阿贝尔部分，第 1 层已列。
+
+### 优先级
+
+| 优先级 | 做什么 |
+|---|---|
+| 必做 | Davoudi 讲义 + 7 道习题，贯穿四周 |
+| 唯一从头看完的视频课 | QGSS 2022，配第 4 周，可倍速 |
+| 定点查询用 | NPTEL 第 38–50 讲；Tong QFT 前 5 讲 |
+| 可延后 | MIT 8.371.3x，写误差分析一节前补 |
+
+不要为了"打好基础"去刷完 NPTEL 全部 60 讲或 Tong 全部 QFT。本项目是一道具体的编码方案设计题，不是要成为群论学家：Georgi 三章 + Alex 等的算法 + 手推一个顶点的高斯定律，这三件做完就足够动手了。
+
+### 明确排除
+
+- Stanford QMSE-02（edX，David Miller）：本科高年级通用量子力学第二学期，覆盖角动量耦合、谐振子代数、密度矩阵、全同粒子。与本项目的唯一接触点是 SU(2) 角动量耦合，而本项目恰恰研究该结构在 SU(3) 失效之处。四个短板一个都不覆盖。已具备读 Kogut–Susskind 原文与 Georgi 的能力则跳过；仅在自测发现角动量耦合、谐振子升降算符或偏迹/纠缠熵有洞时定点补，用 Sakurai 第 3 章与 3.9 节更快（3.9 节的 Schwinger 玻色子是读预势表述的硬前置，该课不覆盖）。
+
+---
+
 ## 建议顺序（四周）
 
 | 周 | 读 | 做 |
